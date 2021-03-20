@@ -43,7 +43,7 @@ namespace InfiniteAsyncSourceODataSample {
 
             return queryable
                 .Skip(e.Skip)
-                .Take(42)
+                .Take(e.Take ?? 42)
                 .ToArray();
         }
 
